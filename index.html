@@ -169,11 +169,11 @@
           
     </section>
 
-    <section  >
+    <section class="container" >
         <h2>Contato</h2>
         <p>Entre em contato conosco</p>
 
-        <form >
+        <form>
             <div class="form-group">
                 <label for="nome">Nome</label>
                 <input class="form-control" type="text" name="nome" id="nome" placeholder="Digite seu nome" required> <!--form control deixa maior os espaços -->
@@ -187,6 +187,27 @@
                 </div>
                 
             </div>
+            <div class="grupo-radio">
+                <div class="radio">
+                    <label><input type="radio" name="tipo-pessoa">Pessoa Física</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="tipo-pessoa">Pessoa Jurídica</label>
+                </div>
+            </div><!--Para funcionar o select em deve colocar um comentário começando no ultima tag antes dele até ele 
+
+           
+             --><select class="contato-select form-control">
+                <option disabled selected>Tipo de Situação</option><!--disabled = desabilita a opção de escolha, mas a opção aparece como informativo-->
+                <option>Casa</option>
+                <option>Apartamento</option>
+                <option>Mansão</option>
+            </select>
+            
+            <button type="button" class="botao-enviar btn btn-primary">
+                Enviar
+            </button>
+
         </form>
 
     </section>

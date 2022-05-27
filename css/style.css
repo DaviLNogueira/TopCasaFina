@@ -11,3 +11,18 @@
     font-size: 26px;
     text-align: center;
 }
+
+.grupo-radio , 
+.contato-select{
+    width: 50%;
+    display:inline-block;
+    vertical-align: top;
+}
+
+.grupo-radio .radio:first-child{
+    margin-top: 0%;
+}
+
+.botao-enviar{
+    margin-bottom: 10px;
+}
