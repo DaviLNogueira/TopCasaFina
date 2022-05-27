@@ -26,3 +26,13 @@
 .botao-enviar{
     margin-bottom: 10px;
 }
+
+footer{
+    background-color: #333;
+    color: #FFFFFF;
+    padding: 20px 20px;
+}
+
+footer address:last-child{
+margin: 0%;
+}
