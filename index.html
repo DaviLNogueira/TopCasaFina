@@ -51,12 +51,12 @@
         </div>
     </section>
 
-    <div class="jumbotron"><!--parecido com um placa de basktboll mo estádio-->
+    <div class="jumbotron"><!--parecido com um placa de basketball mo estádio-->
         <div class="container">
             <h3>Mais de 300 prêmios em design e em conforto </h3>
             <p>Mais de 5 milhões de clientes satisfeitos em todo mundo</p>
         </div>
-    </div><!--Um baner não prescisar sem expecifico , podendo ser uma div-->
+    </div><!--Um banner não precisar sem especifico , podendo ser uma div-->
    
 
     <section class="container"> <!--Deixa espaço-->
@@ -117,34 +117,34 @@
             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
             <li data-target="#carousel-example-generic" data-slide-to="1"></li>
             <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-            </ol>
+            </ol><!--Se adiciona mais uma imagem deve colocar mais um <li> -->
         
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
             
-                <div class="item active">
-                    <img src="img/depoimentos/depoimento1.png" alt="Castelo tipo  princesa Disney">
-                    <div class="carousel-caption">
+                <figure class="item active"><!--Primeira tag para começar uma foto-->
+                    <img src="img/depoimentos/projetos0.png" alt="Castelo tipo  princesa Disney">
+                    <figcaption class="carousel-caption">
                         <h3>Yuri Padilha</h3>
                         <p>Gostei muito</p>
-                    </div>
-                </div>
+                    </figcaption>
+                </figure>
 
-            <div class="item">
-                <img src="img/depoimentos/depoimento2.png" alt="Castelo de campo">
-                <div class="carousel-caption">
-                    <h3>Fernando Stafaneni</h3>
-                    <p>Excelente trabalho.</p>
-                </div>
-            </div>
+                <figure class="item">
+                    <img src="img/depoimentos/projetos1.png" alt="Castelo de campo">
+                    <figcaption class="carousel-caption">
+                        <h3>Fernando Stafaneni</h3>
+                        <p>Excelente trabalho.</p>
+                    </figcaption>
+                </figure>
 
-            <div class="item">
-                <img src="img/depoimentos/depoimento3.png" alt="Castelo do dragão">
-                <div class="carousel-caption">
-                    <h3>Caio Sauzas</h3>
-                    <p>Gostei, competência em primeiro lugar.</p>
-                </div>
-            </div>
+                <figure class="item">
+                    <img src="img/depoimentos/projetos2.png" alt="Castelo do dragão">
+                    <figcaption class="carousel-caption">
+                        <h3>Caio Sauzas</h3>
+                        <p>Gostei, competência em primeiro lugar.</p>
+                    </figcaption>
+                </figure>
             </div>
 
             <!-- Controle do carrosel -->
@@ -159,6 +159,36 @@
             </a>
         </div>
     
+    </section>
+
+    <section class="container">
+        <h2>Vídeo Institucional</h2>
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/QFjVMWdx_ys"></iframe>
+          </div>
+          
+    </section>
+
+    <section  >
+        <h2>Contato</h2>
+        <p>Entre em contato conosco</p>
+
+        <form >
+            <div class="form-group">
+                <label for="nome">Nome</label>
+                <input class="form-control" type="text" name="nome" id="nome" placeholder="Digite seu nome" required> <!--form control deixa maior os espaços -->
+            </div>
+            <div class="form-group"> <!--deixa agrupado os grupo-->
+                <label for="contato-email">E-mail</label>
+                <div class="input-group">
+                    <div class="input-group-addon">@</div><!--Cria um caixa com um carácter dentro , usado com o input-group-->
+                    <input class="form-control" type="email" name="email" id="contato-email" placeholder="Digite o seu melhor email" required>
+    
+                </div>
+                
+            </div>
+        </form>
+
     </section>
     <script
     src="https://code.jquery.com/jquery-1.12.4.js"
