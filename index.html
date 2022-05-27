@@ -3,23 +3,52 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1"><!--O tamanho da tela fica ajustado com o tamanho do dispositivo-->
     </head>
 <body>
     
     <div class="container">
+        
         <h2>Sobre Nós</h2>
-<img class="img-responsive" src="img/empresa.jpg">
+        <img class="img-responsive" src="img/empresa.jpg">
 
-    <h2 data-toggle="collapse" data-target="#primeiro-paragrafo">Desde 1935</h2>
-    <p id="primeiro-paragrafo" class="collapse in">A TopCasa Fina Arquitetura está no mercado desde... </p>
+        <div  class="panel-group" id="paineis-sobre"> <!--Agrupa um grupo de painel-->
+            <div class="panel panel-default"><!--div que concentra todo o painel-->
+            <div class="panel-heading"><!--Cabeça do painel-->
+                <h3 class = "panel-title" data-toggle="collapse" data-target="#primeiro-paragrafo" data-parent="#paineis-sobre">Desde 1935</h3><!--Especifico para titulos de paineis a classe-->
+            </div>
+            <div id="primeiro-paragrafo" class="collapse in">
+                <div class="panel-body"> <!--Corpo do painel-->
+                    <p >A TopCasa Fina Arquitetura está no mercado desde... </p>
+                </div>
+            </div>
+            </div>
+            
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class = "panel-title" data-toggle="collapse" data-target="#segundo-paragrafo" data-parent="#paineis-sobre">Preços acessíveis</h3>
+                    <!--data-target é o alvo que deseja atingir e dat-toggle usada para esconder-->
+                </div>
+                
+                <div id="segundo-paragrafo" class="collapse"><!--o que vai ser escondida-->
+                    <div class="panel-body">
+                        <p >Preços a partir de R$100,00 </p>
+                    </div>
+                </div>
+            </div>
 
-    <h2 data-toggle="collapse" data-target="#segundo-paragrafo">Desde 1935</h2>
-    <p id="segundo-paragrafo" class="collapse">A TopCasa Fina Arquitetura está no mercado desde... </p>
-
-    <h2 data-toggle="collapse" data-target="#terceiro-paragrafo">Desde 1935</h2>
-    <p id="terceiro-paragrafo" class="collapse">A TopCasa Fina Arquitetura está no mercado desde... </p>
-`
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class = "panel-title" data-toggle="collapse" data-target="#terceiro-paragrafo" data-parent="#paineis-sobre">Alegria para colaborar com um mundo mais bonito</h3><!--data-parent nesse caso para referênciar o grupo que que irá controlar o aparecimento do código-->
+                </div>
+                <div id="terceiro-paragrafo" class="collapse">
+                    <div class="panel-body">
+                        <p >A TopCasa Fina Arquitetura está no mercado desde... </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     
     <script
