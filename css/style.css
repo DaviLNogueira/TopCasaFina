@@ -2,6 +2,36 @@
     margin-top: 20px;
 }
 
+html , body{
+    height: 100%;
+}
+
+header{
+    background-image: url(../img/castelo.jpg); 
+    background-size:cover;/*encaixe da pagina no css*/
+    background-position: top center;/*Posição da imagem na página*/
+    height: 100%;
+    position: relative;/*utilizar quando o filho utilizar position absolute*/
+}
+
+header h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.banner{
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    width: 80%;
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);/*Transformar de acordo com a caixa*/
+    transition: 0.8s;
+    
+}
 .depoimento{
     background-color: #0275D8;
     padding-top: 20px;
