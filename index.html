@@ -30,234 +30,248 @@
                 </div>
             </div>
         </nav>
-        <div class="banner">
-            <h1>TopCasaFina Arquitetura</h1>
-            <p>Projetando a casa dos sonhos desde 2000 a.c</p>
-            <button type="button" class="btn btn-primary btn-lg">Contate-nos agora</button>
+        <div class="container bannerWrrapper">
+            <div class="banner">
+                <h1>TopCasaFina Arquitetura</h1>
+                <p>Projetando a casa dos sonhos desde 2000 a.c</p>
+                <button type="button" class="btn btn-primary btn-lg">Contate-nos agora</button>
+            </div>
         </div>
     </header>
     <section  id ="sobre-nos" class="container">
-        
-        <h2>Sobre Nós</h2>
-        <img class="img-responsive" src="img/empresa.jpg">
-        
-        <div  class="panel-group" id="paineis-sobre"> <!--Agrupa um grupo de painel-->
-            <div class="panel panel-default"><!--div que concentra todo o painel-->
-                <div class="panel-heading"><!--Cabeça do painel-->
-                    <h3 class = "panel-title" data-toggle="collapse" data-target="#primeiro-paragrafo" data-parent="#paineis-sobre">Desde 1935</h3><!--Especifico para títulos de painéis a classe-->
+        <div class="row"> <!--Cria colunas , divididas em 12 na pagina -->
+            <h2>Sobre Nós</h2>
+            <img class="img-responsive col-sm-6" src="img/empresa.jpg">
+            <!--col-sm-6 termina qual é o formato de tela que será utilizado e o tamanho do col-->
+            <div  class="panel-group col-sm-6" id="paineis-sobre"> <!--Agrupa um grupo de painel-->
+                <div class="panel panel-default"><!--div que concentra todo o painel-->
+                    <div class="panel-heading"><!--Cabeça do painel-->
+                        <h3 class = "panel-title" data-toggle="collapse" data-target="#primeiro-paragrafo" data-parent="#paineis-sobre">Desde 1935</h3><!--Especifico para títulos de painéis a classe-->
+                    </div>
+                    <div id="primeiro-paragrafo" class="collapse in">
+                        <div class="panel-body"> <!--Corpo do painel-->
+                            <p >A TopCasa Fina Arquitetura está no mercado desde... </p>
+                        </div>
+                    </div>
                 </div>
-                <div id="primeiro-paragrafo" class="collapse in">
-                    <div class="panel-body"> <!--Corpo do painel-->
-                        <p >A TopCasa Fina Arquitetura está no mercado desde... </p>
+                
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class = "panel-title" data-toggle="collapse" data-target="#segundo-paragrafo" data-parent="#paineis-sobre">Preços acessíveis</h3>
+                        <!--data-target é o alvo que deseja atingir e dat-toggle usada para esconder-->
+                    </div>
+                    
+                    <div id="segundo-paragrafo" class="collapse"><!--o que vai ser escondida-->
+                        <div class="panel-body">
+                            <p >Preços a partir de R$100,00 </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class = "panel-title" data-toggle="collapse" data-target="#terceiro-paragrafo" data-parent="#paineis-sobre">Alegria para colaborar com um mundo mais bonito</h3><!--data-parent nesse caso para referenciar o grupo que que irá controlar o aparecimento do código-->
+                    </div>
+                    <div id="terceiro-paragrafo" class="collapse">
+                        <div class="panel-body">
+                            <p >A TopCasa Fina Arquitetura está no mercado desde... </p>
+                        </div>
                     </div>
                 </div>
             </div>
-            
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class = "panel-title" data-toggle="collapse" data-target="#segundo-paragrafo" data-parent="#paineis-sobre">Preços acessíveis</h3>
-                    <!--data-target é o alvo que deseja atingir e dat-toggle usada para esconder-->
-                </div>
-                
-                <div id="segundo-paragrafo" class="collapse"><!--o que vai ser escondida-->
-                    <div class="panel-body">
-                        <p >Preços a partir de R$100,00 </p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class = "panel-title" data-toggle="collapse" data-target="#terceiro-paragrafo" data-parent="#paineis-sobre">Alegria para colaborar com um mundo mais bonito</h3><!--data-parent nesse caso para referenciar o grupo que que irá controlar o aparecimento do código-->
-                </div>
-                <div id="terceiro-paragrafo" class="collapse">
-                    <div class="panel-body">
-                        <p >A TopCasa Fina Arquitetura está no mercado desde... </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <div class="jumbotron"><!--parecido com um placa de basketball mo estádio-->
-        <div class="container">
-            <h3>Mais de 300 prêmios em design e em conforto </h3>
-            <p>Mais de 5 milhões de clientes satisfeitos em todo mundo</p>
-        </div>
-    </div><!--Um banner não precisar sem especifico , podendo ser uma div-->
-    
-    
-    <section id="nossos-projetos" class="container"> <!--Deixa espaço-->
-        <h2>Nossos projetos</h2>
-        
-        <figure class="thumbnail"> <!---Uma caixa que tem uma imagem principal e uma descrição-->
-            <img src="img/projetos/casa-castelo.png" alt="Casa no modelo em castelo">
-            <figcaption class="caption"><!--Descrição do thumbnail-->
-                <h3>Casa Castelo</h3>
-                <p>A casa castelo é o ultimo lançamento da TopCasaFina Arquitetura,feita para um monge.</p>
-                
-            </figcaption><!--figcaptin usada para representar uma descrição de uma figura-->
-        </figure><!--figure é a colocação de uma figura-->
-        
-        <figure class="thumbnail"> <!---Uma caixa que tem uma imagem principal e uma descrição-->
-            <img src="img/projetos/casa-lago.png" alt="Casa do lago para passar as feiras">
-            <figcaption class="caption"><!--Descrição do thumbnail-->
-                <h3>Casa Lago</h3>
-                <p>A Casa do Lago foi lar de inúmeras pessoas que conheciam o presidente da época.</p>
-                
-            </figcaption><!--figcaptin usada para representar uma descrição de uma figura-->
-        </figure>
-        
-        <figure class="thumbnail"> <!---Uma caixa que tem uma imagem principal e uma descrição-->
-            <img src="img/projetos/mercado-marapira.png" alt="Mercado atacadista">
-            <figcaption class="caption"><!--Descrição do thumbnail-->
-                <h3>Mercado Marapira</h3>
-                <p>O mercado Marapira foi projetado nos mínimos detalhes na arquitetura baseada em frutas..</p>
-                
-            </figcaption><!--figcaptin usada para representar uma descrição de uma figura-->
-        </figure>
-        
-        <figure class="thumbnail"> <!---Uma caixa que tem uma imagem principal e uma descrição-->
-            <img src="img/projetos/palacio-dionisio.png" alt="Grande palacio real">
-            <figcaption class="caption"><!--Descrição do thumbnail-->
-                <h3>Palácio Dionísio</h3>
-                <p>O palácio Dionísio foi eleito pela revista 'Grandes palácios' como o palácio mais lindo do mundo.</p>
-                
-            </figcaption><!--figcaptin usada para representar uma descrição de uma figura-->
-        </figure>
-        
-        <figure class="thumbnail"> <!---Uma caixa que tem uma imagem principal e uma descrição-->
-            <img src="img/projetos/residencia-ludi.png" alt="lugar para casas planejadas">
-            <figcaption class="caption"><!--Descrição do thumbnail-->
-                <h3>Residência Ludi</h3>
-                <p>A residência Ludi foi projetada para ser a mais bela casa de São Paulo pela revista Housing.</p>
-                
-            </figcaption><!--figcaptin usada para representar uma descrição de uma figura-->
-        </figure>
-    </section><!--Divisão semântica do conteúdo das paginas-->
-    
-    <section id="depoimentos">
-        <h2 class="container depoimento">Depoimentos de clientes</h2>
-        
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-            </ol><!--Se adiciona mais uma imagem deve colocar mais um <li> -->
-                
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner" role="listbox">
-                    
-                    <figure class="item active"><!--Primeira tag para começar uma foto-->
-                        <img src="img/depoimentos/projetos0.png" alt="Castelo tipo  princesa Disney">
-                        <figcaption class="carousel-caption">
-                            <h3>Yuri Padilha</h3>
-                            <p>Gostei muito</p>
-                        </figcaption>
-                    </figure>
-                    
-                    <figure class="item">
-                        <img src="img/depoimentos/projetos1.png" alt="Castelo de campo">
-                        <figcaption class="carousel-caption">
-                            <h3>Fernando Stafaneni</h3>
-                            <p>Excelente trabalho.</p>
-                        </figcaption>
-                    </figure>
-                    
-                    <figure class="item">
-                        <img src="img/depoimentos/projetos2.png" alt="Castelo do dragão">
-                        <figcaption class="carousel-caption">
-                            <h3>Caio Sauzas</h3>
-                            <p>Gostei, competência em primeiro lugar.</p>
-                        </figcaption>
-                    </figure>
-                </div>
-                
-                <!-- Controle do carrossel -->
-                
-                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-            
         </section>
         
-        <section id="video" class="container">
-            <h2>Vídeo Institucional</h2>
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/QFjVMWdx_ys"></iframe>
+        <div class="jumbotron"><!--parecido com um placa de basketball mo estádio-->
+            <div class="container">
+                <h3>Mais de 300 prêmios em design e em conforto </h3>
+                <p>Mais de 5 milhões de clientes satisfeitos em todo mundo</p>
             </div>
-            
-        </section>
+        </div><!--Um banner não precisar sem especifico , podendo ser uma div-->
         
-        <section id="contato" class="container" > 
-            <h2>Contato</h2>
-            <p>Entre em contato conosco</p>
-            
-            <form>
-                <div class="form-group">
-                    <label for="nome">Nome</label>
-                    <input class="form-control" type="text" name="nome" id="nome" placeholder="Digite seu nome" required> <!--form control deixa maior os espaços -->
+        
+        <section id="nossos-projetos" class="container"> <!--Deixa espaço-->
+            <h2>Nossos projetos</h2>
+            <div class="row">
+                <div  class="col-sm-6 col-md-4 col-lg-3">
+                    <figure class="thumbnail"> <!---Uma caixa que tem uma imagem principal e uma descrição-->
+                        <img src="img/projetos/casa-castelo.png" alt="Casa no modelo em castelo">
+                        <figcaption class="caption"><!--Descrição do thumbnail-->
+                            <h3>Casa Castelo</h3>
+                            <p>A casa castelo é o ultimo lançamento da TopCasaFina Arquitetura,feita para um monge.</p>
+                            
+                        </figcaption><!--figcaptin usada para representar uma descrição de uma figura-->
+                    </figure><!--figure é a colocação de uma figura-->
                 </div>
-                <div class="form-group"> <!--deixa agrupado os grupo-->
-                    <label for="contato-email">E-mail</label>
-                    <div class="input-group">
-                        <div class="input-group-addon">@</div><!--Cria um caixa com um carácter dentro , usado com o input-group-->
-                        <input class="form-control" type="email" name="email" id="contato-email" placeholder="Digite o seu melhor email" required>
+                
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <figure class="thumbnail"> 
+                        <img src="img/projetos/casa-lago.png" alt="Casa do lago para passar as feiras">
+                        <figcaption class="caption">
+                            <h3>Casa Lago</h3>
+                            <p>A Casa do Lago foi lar de inúmeras pessoas que conheciam o presidente da época.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <figure class="thumbnail"> 
+                        <img src="img/projetos/mercado-marapira.png" alt="Mercado atacadista">
+                        <figcaption class="caption">
+                            <h3>Mercado Marapira</h3>
+                            <p>O mercado Marapira foi projetado nos mínimos detalhes na arquitetura baseada em frutas..</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <figure class="thumbnail"> 
+                        <img src="img/projetos/palacio-dionisio.png" alt="Grande palácio real">
+                        <figcaption class="caption">
+                            <h3>Palácio Dionísio</h3>
+                            <p>O palácio Dionísio foi eleito pela revista 'Grandes palácios' como o palácio mais lindo do mundo.</p> 
+                        </figcaption>
+                    </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <figure class="thumbnail">
+                        <img src="img/projetos/residencia-ludi.png" alt="lugar para casas planejadas">
+                        <figcaption class="caption">
+                            <h3>Residência Ludi</h3>
+                            <p>A residência Ludi foi projetada para ser a mais bela casa de São Paulo pela revista Housing.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section><!--Divisão semântica do conteúdo das paginas-->
+        
+        <section id="depoimentos">
+            <h2 class="container depoimento">Depoimentos de clientes</h2>
+            
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol><!--Se adiciona mais uma imagem deve colocar mais um <li> -->
+                    
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
                         
+                        <figure class="item active"><!--Primeira tag para começar uma foto-->
+                            <img src="img/depoimentos/projetos0.png" alt="Castelo tipo  princesa Disney">
+                            <figcaption class="carousel-caption">
+                                <h3>Yuri Padilha</h3>
+                                <p>Gostei muito</p>
+                            </figcaption>
+                        </figure>
+                        
+                        <figure class="item">
+                            <img src="img/depoimentos/projetos1.png" alt="Castelo de campo">
+                            <figcaption class="carousel-caption">
+                                <h3>Fernando Stafaneni</h3>
+                                <p>Excelente trabalho.</p>
+                            </figcaption>
+                        </figure>
+                        
+                        <figure class="item">
+                            <img src="img/depoimentos/projetos2.png" alt="Castelo do dragão">
+                            <figcaption class="carousel-caption">
+                                <h3>Caio Sauzas</h3>
+                                <p>Gostei, competência em primeiro lugar.</p>
+                            </figcaption>
+                        </figure>
                     </div>
                     
+                    <!-- Controle do carrossel -->
+                    
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
-                <div class="grupo-radio">
-                    <div class="radio">
-                        <label><input type="radio" name="tipo-pessoa">Pessoa Física</label>
-                    </div>
-                    <div class="radio">
-                        <label><input type="radio" name="tipo-pessoa">Pessoa Jurídica</label>
-                    </div>
-                </div><!--Para funcionar o select em deve colocar um comentário começando no ultima tag antes dele até ele 
-                    
-                    
-                --><select class="contato-select form-control">
-                    <option disabled selected>Tipo de Situação</option><!--disabled = desabilita a opção de escolha, mas a opção aparece como informativo-->
-                    <option>Casa</option>
-                    <option>Apartamento</option>
-                    <option>Mansão</option>
-                </select>
                 
-                <button type="button" class="botao-enviar btn btn-primary">
-                    Enviar
-                </button>
-                
-            </form>
+            </section>
             
-        </section>
-        
-        <footer>
-            <address> <!--adress = Endereço quanto físico quando virtual-->
-                <strong>TopCasaFina Arquitetura</strong><br>
-                Rua Vagueiro, 3185 , Vila Mariana<br><!--br = Quebra de página -->
-                São Paulo,SP<br>
-            </address>
-            <address>
-                Tel:(11) 5571-2751 ou 5083-3384<br>
-                Email:contato.top@alura.com
-            </address>
-        </footer>
-        <script
-        src="https://code.jquery.com/jquery-1.12.4.js"
-        integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
-        crossorigin="anonymous"></script>
-        
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/navbar-animatition-fix.js"></script>
-        
-    </body>
-    </html>
+            
+            <div class="container">
+                <div class="row">
+                    <section id="video" class="col-sm-6">
+                        <h2>Vídeo Institucional</h2>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/QFjVMWdx_ys"></iframe>
+                        </div>
+                    </section>
+                    
+                    
+                    <section id="contato" class="col-sm-6" > 
+                        <h2>Contato</h2>
+                        <p>Entre em contato conosco</p>
+                        
+                        <form>
+                            <div class="form-group">
+                                <label for="nome">Nome</label>
+                                <input class="form-control" type="text" name="nome" id="nome" placeholder="Digite seu nome" required> <!--form control deixa maior os espaços -->
+                            </div>
+                            <div class="form-group"> <!--deixa agrupado os grupo-->
+                                <label for="contato-email">E-mail</label>
+                                <div class="input-group">
+                                    <div class="input-group-addon">@</div><!--Cria um caixa com um carácter dentro , usado com o input-group-->
+                                    <input class="form-control" type="email" name="email" id="contato-email" placeholder="Digite o seu melhor email" required>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="grupo-radio">
+                                <div class="radio">
+                                    <label><input type="radio" name="tipo-pessoa">Pessoa Física</label>
+                                </div>
+                                <div class="radio">
+                                    <label><input type="radio" name="tipo-pessoa">Pessoa Jurídica</label>
+                                </div>
+                            </div><!--Para funcionar o select em deve colocar um comentário começando no ultima tag antes dele até ele 
+                                
+                                
+                            --><select class="contato-select form-control">
+                                <option disabled selected>Tipo de Situação</option><!--disabled = desabilita a opção de escolha, mas a opção aparece como informativo-->
+                                <option>Casa</option>
+                                <option>Apartamento</option>
+                                <option>Mansão</option>
+                            </select>
+                            
+                            <button type="button" class="botao-enviar btn btn-primary">
+                                Enviar
+                            </button>
+                            
+                        </form>
+                        
+                    </section>
+                </div>
+            </div>
+            
+            <footer>
+                <address> <!--adress = Endereço quanto físico quando virtual-->
+                    <strong>TopCasaFina Arquitetura</strong><br>
+                    Rua Vagueiro, 3185 , Vila Mariana<br><!--br = Quebra de página -->
+                    São Paulo,SP<br>
+                </address>
+                <address>
+                    Tel:(11) 5571-2751 ou 5083-3384<br>
+                    Email:contato.top@alura.com
+                </address>
+            </footer>
+            <script
+            src="https://code.jquery.com/jquery-1.12.4.js"
+            integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+            crossorigin="anonymous"></script>
+            
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/navbar-animatition-fix.js"></script>
+            
+        </body>
+        </html>

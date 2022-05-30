@@ -64,5 +64,30 @@ footer{
 }
 
 footer address:last-child{
-margin: 0%;
+margin-bottom: 0%;
 }
+
+@media(min-width:768px){ /*largura miníma*/
+    #paineis-sobre{
+        margin-top: 0;
+    }
+    .thumbnail .caption{
+        padding: 0;
+    }
+}
+
+@media (min-width:992px){
+    .banner{
+       
+        left: 0;
+        transform: translate(0%,-80%);
+        width: 50%;
+    }
+
+    .bannerWrrapper{
+        position: relative;
+        height: 100%;
+    }
+
+}
+
